@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .item-box {
+            width: 100%;
+            height: 50px;
+            background: yellow;
+        }
+
+        .fixe {
+            position: fixed;
+            z-index: 999;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fixe-item" class="item-box fixe hide">吸顶导航</div>
+    <div class="container">
+        <div class="header"></div>
+        <div class="main">
+            <div class="inner-box">
+                <p class="pull-down">下拉刷新</p>
+                <div class="list">
+                    <ul>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <div class="item-box" id="item-box">
+                            吸顶导航
+                        </div>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                        <li>数据一</li>
+                    </ul>
+                </div>
+                <p class="pull-up">上拉加载</p>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <script src="js/libs/bscroll.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

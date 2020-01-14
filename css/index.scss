@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .header{
+        width: 100%;
+        height: 50px;
+        background: red;
+    }
+    .main{
+        flex: 1;
+        overflow: hidden;
+    }
+    .footer{
+        width: 100%;
+        height: 50px;
+        background: blue;
+    }
+}
+.inner-box{
+    position: relative;
+    .pull-up,.pull-down{
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #eee;
+    }
+    .pull-up{
+        bottom: -50px;
+    }
+    .pull-down{
+        top: -50px;
+    }
+}
+.list{
+    li{
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #999;
+    }
+}
